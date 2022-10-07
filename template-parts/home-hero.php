@@ -87,7 +87,6 @@
 								<p>A digital design and development studio based in the North East of England. We are a small, but powerful independent team of digital specialists combining the most advanced web technologies, with modern design and bold communication. We live and breath the work we produce, focused on delivering amazing experiences you will love and driving future growth for your business.</p>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
@@ -182,15 +181,11 @@
 								</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 				<div class="row row-2">
 					<?php
-
 					if (have_rows('client_each')) :
-
-						// Loop through rows.
 						while (have_rows('client_each')) : the_row(); ?>
 
 							<div class="col-md-3 client-each">
@@ -205,9 +200,7 @@
 							</div>
 
 					<?php endwhile;
-
-					endif;
-
+						endif;
 					?>
 				</div>
 			</div>
