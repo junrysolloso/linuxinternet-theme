@@ -211,9 +211,7 @@
 		<?php get_template_part('template-parts/header-dark', 'index'); ?>
 		<div class="inner">
 			<div class="services-video">
-				<div class="video-0 video__ reveal">
-
-				</div>
+				<div class="video-0 video__ reveal"></div>
 				<div class="video-1 video__">
 					<video autoplay muted loop id="video-1">
 						<source src="<?php echo get_template_directory_uri() . '/video/code.mp4' ?>" type="video/mp4">
