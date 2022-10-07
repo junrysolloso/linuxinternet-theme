@@ -10,7 +10,6 @@
 				<div class="col-8">
 					<h4 class="intro-big"><?php the_title(); ?></h4>
 				</div>
-
 			</div>
 		</div>
 	</div>

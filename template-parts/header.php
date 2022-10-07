@@ -1,5 +1,5 @@
 <header>
-   <section class="clearHeader">
-      
-   </section>
+	<section class="clearHeader">
+
+	</section>
 </header>

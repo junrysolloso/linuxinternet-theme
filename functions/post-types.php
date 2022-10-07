@@ -1,6 +1,6 @@
 <?php
 //Add Options Pages
-if(function_exists('acf_add_options_page')){
+if (function_exists('acf_add_options_page')) {
 	acf_add_options_page(array(
 		'page_title' 	=> 'Linux Options',
 		'menu_title'	=> 'Linux Options',
@@ -71,46 +71,47 @@ add_action( 'init', 'custom_post_type', 0 );
 */
 
 
-  // Register Custom Post Type
+// Register Custom Post Type
 
 
-function projects_post_type() {
+function projects_post_type()
+{
 
-		$labels = array(
-		'name'                  => _x( 'projects', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'project', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'             => __( 'Projects', 'text_domain' ),
-		'name_admin_bar'        => __( 'Project', 'text_domain' ),
-		'archives'              => __( 'Project Archives', 'text_domain' ),
-		'attributes'            => __( 'Project Attributes', 'text_domain' ),
-		'parent_item_colon'     => __( 'Parent project:', 'text_domain' ),
-		'all_items'             => __( 'All Project', 'text_domain' ),
-		'add_new_item'          => __( 'Add New project', 'text_domain' ),
-		'add_new'               => __( 'Add New', 'text_domain' ),
-		'new_item'              => __( 'New Member', 'text_domain' ),
-		'edit_item'             => __( 'Edit project', 'text_domain' ),
-		'update_item'           => __( 'Update project', 'text_domain' ),
-		'view_item'             => __( 'View project', 'text_domain' ),
-		'view_items'            => __( 'View project', 'text_domain' ),
-		'search_items'          => __( 'Search Project', 'text_domain' ),
-		'not_found'             => __( 'Not found', 'text_domain' ),
-		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
-		'featured_image'        => __( 'Project Image', 'text_domain' ),
-		'set_featured_image'    => __( 'Set Project image', 'text_domain' ),
-		'remove_featured_image' => __( 'Remove Project image', 'text_domain' ),
-		'use_featured_image'    => __( 'Use as Project image', 'text_domain' ),
-		'insert_into_item'      => __( 'Insert into project', 'text_domain' ),
-		'uploaded_to_this_item' => __( 'Uploaded to this project', 'text_domain' ),
-		'items_list'            => __( 'Project list', 'text_domain' ),
-		'items_list_navigation' => __( 'Project list navigation', 'text_domain' ),
-		'filter_items_list'     => __( 'Filter Project list', 'text_domain' ),
+	$labels = array(
+		'name'                  => _x('projects', 'Post Type General Name', 'text_domain'),
+		'singular_name'         => _x('project', 'Post Type Singular Name', 'text_domain'),
+		'menu_name'             => __('Projects', 'text_domain'),
+		'name_admin_bar'        => __('Project', 'text_domain'),
+		'archives'              => __('Project Archives', 'text_domain'),
+		'attributes'            => __('Project Attributes', 'text_domain'),
+		'parent_item_colon'     => __('Parent project:', 'text_domain'),
+		'all_items'             => __('All Project', 'text_domain'),
+		'add_new_item'          => __('Add New project', 'text_domain'),
+		'add_new'               => __('Add New', 'text_domain'),
+		'new_item'              => __('New Member', 'text_domain'),
+		'edit_item'             => __('Edit project', 'text_domain'),
+		'update_item'           => __('Update project', 'text_domain'),
+		'view_item'             => __('View project', 'text_domain'),
+		'view_items'            => __('View project', 'text_domain'),
+		'search_items'          => __('Search Project', 'text_domain'),
+		'not_found'             => __('Not found', 'text_domain'),
+		'not_found_in_trash'    => __('Not found in Trash', 'text_domain'),
+		'featured_image'        => __('Project Image', 'text_domain'),
+		'set_featured_image'    => __('Set Project image', 'text_domain'),
+		'remove_featured_image' => __('Remove Project image', 'text_domain'),
+		'use_featured_image'    => __('Use as Project image', 'text_domain'),
+		'insert_into_item'      => __('Insert into project', 'text_domain'),
+		'uploaded_to_this_item' => __('Uploaded to this project', 'text_domain'),
+		'items_list'            => __('Project list', 'text_domain'),
+		'items_list_navigation' => __('Project list navigation', 'text_domain'),
+		'filter_items_list'     => __('Filter Project list', 'text_domain'),
 	);
 	$args = array(
-		'label'                 => __( 'project', 'text_domain' ),
-		'description'           => __( 'projects', 'text_domain' ),
+		'label'                 => __('project', 'text_domain'),
+		'description'           => __('projects', 'text_domain'),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor' ),
-		'taxonomies'            => array( 'category' ),
+		'supports'              => array('title', 'editor'),
+		'taxonomies'            => array('category'),
 		'hierarchical'          => false,
 		'menu_icon' => 'dashicons-admin-page',
 		'public'                => true,
@@ -125,7 +126,6 @@ function projects_post_type() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'project', $args );
-
+	register_post_type('project', $args);
 }
-add_action( 'init', 'projects_post_type', 0 );
+add_action('init', 'projects_post_type', 0);

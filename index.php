@@ -3,7 +3,7 @@
 <section>
 	<div class="inner">
 		<p>Page Not Found</p>
-    </div>
+	</div>
 </section>
 
 <?php get_footer(); ?>
