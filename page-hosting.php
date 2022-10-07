@@ -1,4 +1,6 @@
-<?php get_header(); /* Template Name: Hosting */ ?>
+<?php /* Template Name: Hosting */ ?>
+<?php get_header(); ?>
+
 <div id="main-page">
 	<section id="page-head" class="first-section">
 		<div class="inner">
@@ -75,7 +77,7 @@
 					</div>
 				</div>
 			</div>
-			<div>
+		</div>
 	</section>
 
 	<section id="section" style="background: whitesmoke;">
@@ -117,9 +119,8 @@
 					</div>
 				</div>
 			</div>
-			<div>
+		</div>
 	</section>
-
 </div>
 
 <?php get_footer(); ?>

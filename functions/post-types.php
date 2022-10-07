@@ -1,5 +1,7 @@
 <?php
-//Add Options Pages
+
+
+// Add Options Pages
 if (function_exists('acf_add_options_page')) {
 	acf_add_options_page(array(
 		'page_title' 	=> 'Linux Options',
@@ -71,9 +73,9 @@ add_action( 'init', 'custom_post_type', 0 );
 */
 
 
+
+
 // Register Custom Post Type
-
-
 function projects_post_type()
 {
 

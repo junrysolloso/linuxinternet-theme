@@ -89,7 +89,6 @@
 										<div class="bar"></div>
 									</div>
 								</div>
-
 							</div>
 						</div>
 					</div>
