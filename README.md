@@ -1,2 +1,1 @@
-# linuxinternet-theme
-Linux 
+# Linux Internet Theme
