@@ -1,0 +1,8 @@
+.login h1 a {
+	width:100%;
+	background-size:contain;
+	background-image:url(../img/logo-dark.svg);
+}
+body{
+background:#f8f8f8;
+}
