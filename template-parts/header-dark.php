@@ -1,5 +1,4 @@
 <div class="abso">
-
 	<div class="overlay" id="overlay">
 		<div class="shade"></div>
 		<div class="to-parent">
@@ -117,7 +116,6 @@
 										<div class="bar"></div>
 									</div>
 								</div>
-
 							</div>
 						</div>
 					</div>
